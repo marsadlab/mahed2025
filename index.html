@@ -222,8 +222,8 @@
             <p>We propose MAHED 2025 - Multimodal Detection of Hope and Hate Emotions in Arabic Content as a shared task for ArabicNLP 2025. This task aims to enhance Arabic NLP research by addressing the critical issue of detecting hate speech, hate memes, and promoting hope speech across text and multimodal formats, enriched with emotional insights. It includes three sub-tasks:</p>
             <ul>
                 <li>Text-based classification of hate and hope speech</li>
+                <li>Multitasking on Emotion, Offensive, and Hate Detection from Text</li>
                 <li>Multimodal detection of hate memes</li>
-                <li>Emotion-aware Hate and Hope Analysis</li>
             </ul>
             <p>Participants will have access to an annotated Arabic dataset containing both text-only and text-image content, designed to support the development of context-sensitive and robust NLP models.</p>
 
@@ -255,10 +255,10 @@
             <p>MAHED 2025 consists of three interconnected subtasks:</p>
             
             <div class="subtask">
-                <h4>1. Sub-task 1: Text-based Hate and Hope Speech Classification</h4>
+                <h4>Sub-task 1: Text-based Hate and Hope Speech Classification</h4>
                 <ul>
                     <li><strong>Input:</strong> Arabic textual content</li>
-                    <li><strong>Output:</strong> Binary labels—'hate', 'hope', or 'not_applicable'</li>
+                    <li><strong>Output:</strong> Labels—'hate', 'hope', or 'not_applicable'</li>
                     <li><strong>Goal:</strong> Distinguish hate from hope speech and neutral content.</li>
                     <li><strong>Examples:</strong>
                         <ul>
@@ -271,7 +271,57 @@
             </div>
             
             <div class="subtask">
-                <h4>2. Sub-task 2: Multimodal Hateful Meme Detection</h4>
+                <h4>Sub-task 2: Multitasking on Emotion, Offensive, and Hate Detection from Text</h4>
+                
+                <li><strong>Input:</strong> Arabic textual content</li>
+
+                <li>
+                        <strong>Task Description:</strong> This is a multi-task classification. You have to identify Emotion from text. Then identify if the text is offensive or not. If the text is offensive, identify if it is directed to hate or not.
+                </li>
+
+                <li>
+                    <strong>Output:</strong> Three output label
+                    <ul>
+                        <li>Emotion label: neutral, anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust</li>
+                        <li>Offensive label: Yes/No
+                            <ul>
+                                <li>Yes → Hate Directed? 
+                                    <ul> 
+                                        <li>yes-directed</li>
+                                        <li>no-directed</li>
+
+                                    </ul></li>
+                                <li>No → No classification required</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Goal:</strong> Integrate emotional analysis to enhance contextual understanding of offensive and hate content.
+                </li>
+
+                <div>
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li>
+                            <div class="arabic-text">" انتو مسويين حملة على الشوالي و تبغاه يعلق عليكم"</div>
+                            <div>(You are launching a campaign against Al-Shawali and you want him to comment on you)</div>
+                            <div><strong>Emotion:</strong> Surprise, <strong>Offensive:</strong> Yes, <strong>Directed to Hate:</strong> yes-directed</div>
+                        </li>
+                        <li style="margin-top: 15px;">
+                            <div class="arabic-text">"تكفون بيجيبون لي امراض مابي اشوف احد"</div>
+                            <div>(Please bring me diseases. I don't want to see anyone.)</div>
+                            <div><strong>Emotion:</strong> fear, <strong>Offensive:</strong> No</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="subtask">
+                <h4>Sub-task 3: Multimodal Hateful Meme Detection</h4>
                 <ul>
                     <li><strong>Input:</strong> Image + text pairs (Arabic memes).</li>
                     <li><strong>Output:</strong> Binary label (‘hateful’ and ‘non-hateful’).</li>
@@ -280,21 +330,6 @@
                         <ul>
                             <li>Hateful: Text: <span class="arabic-text">"الشعب ده ما يستاهلش غير كده"</span> (This people don’t deserve anything but this.) + Image: Cartoon mocking a group - Hate</li>
                             <li>Non-hateful: Text: <span class="arabic-text">"لما تصحى الصبح وتالقي القهوة جاهزة"</span> (When you wake up and find the coffee ready.) + Image: Cheerful person with coffee - Non-hate</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="subtask">
-                <h4>3. Sub-task 3: Emotion-aware Hate and Hope Analysis</h4>
-                <ul>
-                    <li><strong>Input:</strong> Arabic textual content.</li>
-                    <li><strong>Output:</strong> Hate/hope labels + one of six basic emotions (‘disgust’, ‘happiness’, ‘sadness’, ‘anger’, ‘surprise’, and ‘fear’) or neutral if emotion is unclear.</li>
-                    <li><strong>Goal:</strong> Integrate emotional analysis to enhance contextual understanding of hate/hope content.</li>
-                    <li><strong>Examples:</strong>
-                        <ul>
-                            <li>Text (Hate+Emotion): <span class="arabic-text">"الناس دي بتثير اشمئزازي بتصرفاتهم الوقحة"</span> (These people disgust me with their rude behavior.) - Disgust</li>
-                            <li>Text (Hope+Emotion): <span class="arabic-text">"رغم كل الصعوبات ، أنا متفائل بغد أجمل"</span> (Despite all difficulties, I’m optimistic about a better tomorrow.) - Happiness</li>
                         </ul>
                     </li>
                 </ul>
@@ -314,43 +349,35 @@
         </section>
 
         <section id="timeline">
-            <h2>Tentative Timeline</h2>
+            <h2>Timeline</h2>
             <table class="timeline-table">
                 <tr>
                     <th>Date</th>
                     <th>Event</th>
                 </tr>
                 <tr>
-                    <td>February 15, 2025</td>
-                    <td>Task announcement and registration opens</td>
-                </tr>
-                <tr>
-                    <td>March 1, 2025</td>
-                    <td>Training data release</td>
-                </tr>
-                <tr>
-                    <td>April 15, 2025</td>
-                    <td>Pilot evaluation run</td>
-                </tr>
-                <tr>
-                    <td>May 1, 2025</td>
-                    <td>Test data release</td>
-                </tr>
-                <tr>
-                    <td>May 15, 2025</td>
-                    <td>System submission deadline</td>
-                </tr>
-                <tr>
                     <td>June 1, 2025</td>
-                    <td>Results announcement</td>
+                    <td>Release of training, dev data and evaluation scripts</td>
                 </tr>
                 <tr>
-                    <td>June 15, 2025</td>
-                    <td>System description paper deadline</td>
+                    <td>July 20, 2025</td>
+                    <td>Final registration deadline and test set release</td>
                 </tr>
                 <tr>
-                    <td>July, 2025</td>
-                    <td>Workshop at ArabicNLP 2025</td>
+                    <td>July 25, 2025</td>
+                    <td>Test submission deadline via CodaLab</td>
+                </tr>
+                <tr>
+                    <td>July 30, 2025</td>
+                    <td>Final results released to participants</td>
+                </tr>
+                <tr>
+                    <td>August 15, 2025</td>
+                    <td>System description papers due</td>
+                </tr>
+                <tr>
+                    <td>November 5-9, 2025</td>
+                    <td>ArabicNLP 2025 Workshop in Suzhou, China</td>
                 </tr>
             </table>
         </section>
