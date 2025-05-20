@@ -258,6 +258,80 @@
         .dash {
             color: #777;
         }
+        .examples-container {
+        background-color: #f0f8ff;
+        border-radius: 6px;
+        padding: 15px;
+        margin-top: 15px;
+        }
+
+    .example-meme {
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .example-meme:last-child {
+        margin-bottom: 0;
+    }
+
+    .meme-header {
+        background-color: #004080;
+        color: white;
+        padding: 8px 15px;
+    }
+
+    .meme-header h5 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+
+    .meme-content {
+        padding: 15px;
+        background-color: white;
+    }
+
+    .meme-text, .meme-image, .meme-label {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .meme-label {
+        margin-bottom: 0;
+    }
+
+    .arabic-text {
+        font-family: 'Noto Sans Arabic', Arial, sans-serif;
+        direction: ltr;
+        text-align: left;
+        display: inline-block;
+    }
+
+    .translation {
+        color: #666;
+        font-style: italic;
+        font-size: 0.9em;
+        display: block;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .hateful {
+        background-color: #ffebee;
+        color: #d32f2f;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+
+    .non-hateful {
+        background-color: #e8f5e9;
+        color: #388e3c;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
 
         header {
             text-align: center;

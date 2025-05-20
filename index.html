@@ -221,22 +221,56 @@
         </table>
         </div>
 
-
-
-            <div class="subtask">
-                <h4>Sub-task 3: Multimodal Hateful Meme Detection</h4>
-                <ul>
-                    <li><strong>Input:</strong> Image + text pairs (Arabic memes).</li>
-                    <li><strong>Output:</strong> Binary label (‘hateful’ and ‘non-hateful’).</li>
-                    <li><strong>Goal:</strong> Detect hate in multimodal content.</li>
-                    <li><strong>Examples:</strong>
-                        <ul>
-                            <li>Hateful: Text: <span class="arabic-text">"الشعب ده ما يستاهلش غير كده"</span> (This people don’t deserve anything but this.) + Image: Cartoon mocking a group - Hate</li>
-                            <li>Non-hateful: Text: <span class="arabic-text">"لما تصحى الصبح وتالقي القهوة جاهزة"</span> (When you wake up and find the coffee ready.) + Image: Cheerful person with coffee - Non-hate</li>
-                        </ul>
-                    </li>
-                </ul>
+        <div class="subtask">
+            <h4>Sub-task 3: Multimodal Hate Speech Detection in Memes</h4>
+            
+            <p><strong>Goal</strong>: Detect whether a meme (text + image) is hateful or not.</p>
+            
+            <ul>
+                <li><strong>Input</strong>: Image and embedded Arabic text</li>
+                <li><strong>Output</strong>: hateful, non-hateful</li>
+            </ul>
+            
+            <p><strong>Examples</strong>:</p>
+            
+            <div class="examples-container">
+                <div class="example-meme">
+                    <div class="meme-header">
+                        <h5>Hateful Meme</h5>
+                    </div>
+                    <div class="meme-content">
+                        <div class="meme-text">
+                            <strong>Text</strong>: <span class="arabic-text">الشعب ده ما يستاهلش غير كده</span>
+                            <span class="translation">(These people deserve nothing more than this)</span>
+                        </div>
+                        <div class="meme-image">
+                            <strong>Image</strong>: Cartoon mocking a marginalized group
+                        </div>
+                        <div class="meme-label">
+                            <strong>Label</strong>: <span class="hateful">hateful</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="example-meme">
+                    <div class="meme-header">
+                        <h5>Non-hateful Meme</h5>
+                    </div>
+                    <div class="meme-content">
+                        <div class="meme-text">
+                            <strong>Text</strong>: <span class="arabic-text">لما تصحى الصبح وتلاقي القهوة جاهزة</span>
+                            <span class="translation">(When you wake up in the morning and find coffee ready)</span>
+                        </div>
+                        <div class="meme-image">
+                            <strong>Image</strong>: Cheerful person with coffee
+                        </div>
+                        <div class="meme-label">
+                            <strong>Label</strong>: <span class="non-hateful">non-hateful</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
             <p>Participants may engage in any or all sub-tasks. The evaluation uses F1-score, precision, and recall, with macro-averaged F1 as the primary metric.</p>
         </section>
 
