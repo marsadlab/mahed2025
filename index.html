@@ -4,200 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAHED 2025 - Multimodal Detection of Hope and Hate Emotions in Arabic Content</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 30px 0;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 20px;
-        }
-
-        header img {
-            max-height: 100px;
-            margin-bottom: 15px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-            color: #004080;
-        }
-
-        nav {
-            background: #004080;
-            padding: 12px 0;
-            text-align: center;
-            margin-bottom: 30px;
-            border-radius: 5px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #e0e0e0;
-        }
-
-        section {
-            margin-bottom: 35px;
-            padding: 25px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 8px;
-            margin-top: 0;
-            font-size: 1.8em;
-        }
-
-        h3 {
-            color: #007bff;
-            margin-top: 25px;
-            font-size: 1.5em;
-        }
-
-        ul {
-            list-style: disc;
-            margin-left: 25px;
-            padding-left: 0;
-        }
-
-        li {
-            margin-bottom: 12px;
-            line-height: 1.7;
-        }
-
-        .subtask {
-            border-left: 5px solid #007bff;
-            padding-left: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background: #f0f8ff;
-            padding: 20px;
-            border-radius: 6px;
-        }
-
-        .subtask h4 {
-            margin-top: 0;
-            color: #0056b3;
-            font-size: 1.3em;
-        }
-
-        .timeline-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .timeline-table th,
-        .timeline-table td {
-            border: 1px solid #ccc;
-            padding: 10px 12px;
-            text-align: left;
-        }
-
-        .timeline-table th {
-            background-color: #e9ecef;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .timeline-table tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px 0;
-            margin-top: 40px;
-            border-top: 1px solid #ddd;
-            font-size: 0.95em;
-            color: #666;
-            background-color: #fff;
-        }
-
-        .arabic-text {
-            font-family: 'Noto Sans Arabic', Arial, sans-serif;
-            direction: rtl;
-            display: inline-block;
-        }
-
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        strong {
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            h2 {
-                font-size: 1.6em;
-            }
-
-            h3 {
-                font-size: 1.3em;
-            }
-
-            .container {
-                padding: 15px;
-            }
-
-            section {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
@@ -218,36 +25,85 @@
 
     <div class="container">
         <section id="overview">
-            <h2>Overview of the Proposed Task</h2>
-            <p>We propose MAHED 2025 - Multimodal Detection of Hope and Hate Emotions in Arabic Content as a shared task for ArabicNLP 2025. This task aims to enhance Arabic NLP research by addressing the critical issue of detecting hate speech, hate memes, and promoting hope speech across text and multimodal formats, enriched with emotional insights. It includes three sub-tasks:</p>
+            <h2>Overview</h2>
+            <p><strong>MAHED 2025 </strong> is a shared task at ArabicNLP 2025, focusing on the detection of <strong>hate speech, hope speech, and emotional expression </strong> in Arabic content across both <strong> textual</strong> and <strong> multimodal</strong> formats. This task aims to advance Arabic Natural Language Processing (NLP) through multi-task model and multimodal analysis. Participants may choose to participate in one or more of the following three subtasks:</p>
             <ul>
-                <li>Text-based classification of hate and hope speech</li>
-                <li>Multitasking on Emotion, Offensive, and Hate Detection from Text</li>
-                <li>Multimodal detection of hate memes</li>
+                <li><strong>Text-based Hate and Hope Speech Classification</strong></li>
+                <li><strong>Emotion, Offensive, and Directed Hate Detection (Multitask)</strong></li>
+                <li><strong>Multimodal Hateful Meme Detection</strong></li>
             </ul>
-            <p>Participants will have access to an annotated Arabic dataset containing both text-only and text-image content, designed to support the development of context-sensitive and robust NLP models.</p>
 
-            <h3>Motivation for the Task</h3>
-            <p>Social media amplifies hate speech (text and memes) and hope speech (positivity and resilience), especially in Arabic, where linguistic diversity and cultural nuances complicate detection. Emotions underpin these expressions but are underexplored in Arabic NLP. MAHED 2025 addresses:</p>
+            <h3>Motivation</h3>
+            <p>Social media in the Arabic-speaking world exhibits a dynamic interplay between hateful and hopeful expressions. However, challenges like linguistic diversity, dialect variation, limited datasets, and the emergence of multimodal content (e.g., memes) make automatic detection complex.</p>
+            <p>MAHED 2025 addresses this by:</p>
             <ul>
-                <li>Dual nature of online content (hate vs. hope) for moderation and positive discourse.</li>
-                <li>Multimodal content's rise, requiring text-image analysis.</li>
-                <li>Emotional context's role in intent and impact, vital for moderation, mental health, and counter-extremism.</li>
-                <li>Scarcity of Arabic datasets combines hate, hope, and emotions.</li>
-                <li>This task bridges negative and positive content analysis with emotional insights.</li>
+                <li>Tackling the dual nature of content (hate vs. hope)</li>
+                <li>Enabling multimodal (text + image) analysis</li>
+                <li>Integrating emotion as a critical contextual feature</li>
+                <li>Providing high-quality Arabic datasets for hate, hope, and emotion detection</li>
             </ul>
         </section>
 
+
+
         <section id="data">
-            <h2>Data/Resource Collection and Creation</h2>
-            <ul>
-                <li><strong>Dataset Status:</strong> Ready and fully annotated: Two datasets (Text dataset, and multimodal dataset) are being used for the three subtasks.</li>
-                <li><strong>Text Data:</strong> There are 20,000 Arabic tweets/posts (MSA and dialects) labeled for hate/hope and emotion and are being used for sub-task 1 and sub-task 3.</li>
-                <li><strong>Multimodal Data:</strong> There are 3,061 hate memes (text + images) labeled for ‘hateful’ and ‘not-hateful’ and are being used for sub-task 2. A new test set will be developed. This was previously studied in the context of Arabic memes (Alam et al., 2024).</li>
-                <li><strong>Annotation:</strong> Collected from public social media, anonymized, and annotated by native speakers (Cohen’s Kappa > 0.75).</li>
-                <li><strong>Data split:</strong> Data is split into training, development, and test sets with evaluation scripts, it complies with ethical data-sharing standards.</li>
-                <li><strong>Sample Dataset:</strong> A sample of the dataset can be accessed through the GitHub URL: <a href="https://github.com/rafiulbiswas/MAHED25.git" target="_blank">https://github.com/rafiulbiswas/MAHED25.git</a></li>
-            </ul>
+            <h2>Dataset Resources</h2>
+            <p>The shared task will use the following annotated datasets:</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Subtask 1</th>
+                        <th>Subtask 2</th>
+                        <th>Subtask 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Size</strong></td>
+                        <td>10,000</td>
+                        <td>15,000</td>
+                        <td>4,060</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Labels</strong></td>
+                        <td>
+                            <ul>
+                                <li>hope</li>
+                                <li>hate</li>
+                                <li>not_applicable</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Emotion</li>
+                                <li>Offensive</li>
+                                <li>Hate</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Hateful</li>
+                                <li>Not-hateful</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Source</strong></td>
+                        <td>Rafiul et al. 2025</td>
+                        <td>Wajdi et al.,2024</td>
+                        <td>Firoj et. al,2024</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="dataset-info">
+                <p><strong>Annotation</strong>: All content was collected from public social media, anonymized, and annotated by native speakers. Annotation agreement (Cohen's Kappa) is > 0.75.</p>
+                <p><strong>Data Split</strong>: Training, development, and test sets will be provided with evaluation scripts.</p>
+                <p><strong>Ethics</strong>: The dataset complies with ethical data-sharing standards.</p>
+            </div>
+            
         </section>
 
         <section id="tasks">
@@ -256,67 +112,114 @@
             
             <div class="subtask">
                 <h4>Sub-task 1: Text-based Hate and Hope Speech Classification</h4>
-                <ul>
-                    <li><strong>Input:</strong> Arabic textual content</li>
+                <p><strong>Goal:</strong> Classify Arabic text as hate, hope, or not_applicable</p>
+                <ul>  
+                    <li><strong>Input:</strong> Arabic text (MSA or dialect)</li>
                     <li><strong>Output:</strong> Labels—'hate', 'hope', or 'not_applicable'</li>
-                    <li><strong>Goal:</strong> Distinguish hate from hope speech and neutral content.</li>
-                    <li><strong>Examples:</strong>
-                        <ul>
-                            <li>Hate: <span class="arabic-text">"كل المهاجرين لصوص ومجرمون يجب طردهم فورا"</span> (All immigrants are thieves and criminals; they should be expelled immediately.) - Hate</li>
-                            <li>Hope: <span class="arabic-text">"معا ً يمكننا بناء مستقبل أفضل ألطفالنا"</span> (Together, we can build a better future for our children.) - Hope</li>
-                            <li>Not Applicable: <span class="arabic-text">"اليوم هو يوم مشمس وجميل"</span> (Today is a sunny and beautiful day.) - Non-hate, Non-hope</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="subtask">
-                <h4>Sub-task 2: Multitasking on Emotion, Offensive, and Hate Detection from Text</h4>
-                
-                <li><strong>Input:</strong> Arabic textual content</li>
-
-                <li>
-                        <strong>Task Description:</strong> This is a multi-task classification. You have to identify Emotion from text. Then identify if the text is offensive or not. If the text is offensive, identify if it is directed to hate or not.
-                </li>
-
-                <li>
-                    <strong>Output:</strong> Three output label
-                    <ul>
-                        <li>Emotion label: neutral, anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust</li>
-                        <li>Offensive label: Yes/No
-                            <ul>
-                                <li>Yes → Hate Directed? 
-                                    <ul> 
-                                        <li>yes-directed</li>
-                                        <li>no-directed</li>
-
-                                    </ul></li>
-                                <li>No → No classification required</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <strong>Goal:</strong> Integrate emotional analysis to enhance contextual understanding of offensive and hate content.
-                </li>
-
-                <div>
-                    <strong>Examples:</strong>
-                    <ul>
+                </ul>                    
+                <p><strong>Examples:</strong></p>
+                <div class="examples-container">
+                    <ul class="example-list">
                         <li>
-                            <div class="arabic-text">" انتو مسويين حملة على الشوالي و تبغاه يعلق عليكم"</div>
-                            <div>(You are launching a campaign against Al-Shawali and you want him to comment on you)</div>
-                            <div><strong>Emotion:</strong> Surprise, <strong>Offensive:</strong> Yes, <strong>Directed to Hate:</strong> yes-directed</div>
+                            <div class="example-row">
+                                <div class="arabic-text">كل المهاجرين لصوص ومجرمون يجب طردهم فوراً</div>
+                                <div class="example-label"><strong>Label:</strong> hate</div>
+                            </div>
                         </li>
-                        <li style="margin-top: 15px;">
-                            <div class="arabic-text">"تكفون بيجيبون لي امراض مابي اشوف احد"</div>
-                            <div>(Please bring me diseases. I don't want to see anyone.)</div>
-                            <div><strong>Emotion:</strong> fear, <strong>Offensive:</strong> No</div>
+                        <li>
+                            <div class="example-row">
+                                <div class="arabic-text">معاً يمكننا بناء مستقبل أفضل لأطفالنا</div>
+                                <div class="example-label"><strong>Label:</strong> hope</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example-row">
+                                <div class="arabic-text">اليوم هو يوم مشمس وجميل</div>
+                                <div class="example-label"><strong>Label:</strong> not_applicable</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
+                        
+        <div class="subtask">
+                <h4>Sub-task 2: Emotion, Offensive Language, and Directed Hate Detection</h4>
+                <p><strong>Goal</strong>: Identify the <strong>emotion</strong>, whether the text is <strong>offensive</strong>, and if offensive, whether it contains <strong>identity-targeted hate (directed hate)</strong>.</p>
+                            
+                    <div class="labels-section">
+                        <div class="emoji-header">
+                        <h3>Labels</h3>
+                    </div>
+                    <ul>
+                        <li><strong>Emotion</strong> (single label): neutral, anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust</li>
+                        <li><strong>Offensive</strong>: yes, no</li>
+                        <li><strong>Directed Hate</strong> (if offensive = yes): yes-directed (identity-targeted hate) no-directed (non-targeted or casual offensiveness)</li>
+                    </ul>
+                </div>
+        
+        <div class="distinctions-section">
+            <div class="emoji-header">
+                <h3>Key Distinctions</h3>
+            </div>
+            <ul class="distinctions-list">
+                <li><strong>Hate speech is always offensive</strong>, but not all offensive content is hate speech.</li>
+                <li><strong>Directed hate</strong> refers to offensive content targeting a group/person based on identity (e.g., race, gender, religion).</li>
+            </ul>
+        </div>
+        
+        <table class="examples-table">
+            <thead>
+                <tr>
+                    <th>Text</th>
+                    <th>Emotion</th>
+                    <th>Offensive</th>
+                    <th>Directed Hate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="arabic-text">كل المهاجرين لصوص ويجب طردهم</span>
+                    </td>
+                    <td>anger</td>
+                    <td>yes</td>
+                    <td class="yes-directed">yes-directed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="arabic-text">يا حمار ليش نسيت المفاتيح؟</span>
+                    </td>
+                    <td>anger</td>
+                    <td>yes</td>
+                    <td class="no-directed">no-directed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="arabic-text">الحكومة فاشلة وما تسوى شي مفيد</span>
+                    </td>
+                    <td>anger</td>
+                    <td>yes</td>
+                    <td class="yes-directed">yes-directed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="arabic-text">تكفون بيجيبون لي امراض مابي اشوف احد</span>
+                    </td>
+                    <td>fear</td>
+                    <td class="no-offensive">no</td>
+                    <td class="dash">—</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="arabic-text">أشعر بالحزن لأنني خسرت وظيفتي</span>
+                    </td>
+                    <td>sadness</td>
+                    <td class="no-offensive">no</td>
+                    <td class="dash">—</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
 
 
 
@@ -338,19 +241,34 @@
         </section>
 
         <section id="pilot">
+                <h2>Evaluation Metrics</h2>
+                <div class="metrics-container">
+                    <p>Evaluation will be performed using:</p>
+                    <ul class="metrics-list">
+                        <li>
+                            <div class="primary-metric">
+                                <strong>Macro-averaged F1-score</strong>
+                                <span class="metric-note">*(primary metric)*</span>
+                            </div>
+                        </li>
+                        <li><strong>Precision and Recall</strong></li>
+                        <li><strong>Separate leaderboards per sub-task</strong></li>
+                    </ul>
+                </div>
+
             <h2>Pilot Run Details</h2>
             <p>A pilot study with 2,000 text instances and 500 memes yielded:</p>
             <ul>
-                <li>Sub-task 1: F1 0.78 (hate), 0.82 (hope) with BERT.</li>
-                <li>Sub-task 2: F1 0.75 with CLIP-style model.</li>
-                <li>Sub-task 3: F1 0.70 for emotion+hate/hope.</li>
+                <li>Sub-task 1: F1 0.71 (hate), 0.82 (hope) with BERT</li>
+                <li>Sub-task 2: F1 0.51 with CLIP-style model</li>
+                <li>Sub-task 3: F1 0.68 for multimodal hate memes</li>
             </ul>
             <p>Feedback refined the dataset; details will be shared upon acceptance.</p>
         </section>
 
         <section id="timeline">
             <h2>Timeline</h2>
-            <table class="timeline-table">
+            <table class="comparison-table">
                 <tr>
                     <th>Date</th>
                     <th>Event</th>
@@ -391,8 +309,16 @@
                 <li>Shimaa Ibrahim, Northwestern University in Qatar (<a href="mailto:shimaa.ibrahim@northwestern.edu">shimaa.ibrahim@northwestern.edu</a>)</li>
                 <li>Firoj Alam, Qatar Computing Research Institute, HBKU (<a href="mailto:fialam@hbku.edu.qa">fialam@hbku.edu.qa</a>)</li>
             </ul>
-            <p><strong>Reference:</strong><br>
-            Alam, Firoj, et al. "Propaganda to Hate: A Multimodal Analysis of Arabic Memes with Multi-agent LLMs." International Conference on Web Information Systems Engineering. Singapore: Springer Nature Singapore, 2024.</p>
+            <p><strong>Reference:</strong><br></p>
+            
+            <p>Biswas, Md. Rafiul and Wajdi Zaghouani. 2025. EmoHopeSpeech: An Annotated Dataset of Emotions and Hope Speech in English and Arabic. arXiv preprint  arXiv:2505.11959 [cs.CL]</p>
+
+            <p>Zaghouani, Wajdi, Hamdy Mubarak, and Md. Rafiul Biswas. 2024. So Hateful! Building a Multi-Label Hate Speech Annotated Arabic Dataset. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 15044–15055, Torino, Italy</p>
+
+            <p>Alam, Firoj, et al. "Propaganda to Hate: A Multimodal Analysis of Arabic Memes with Multi-agent LLMs." International Conference on Web Information Systems Engineering. Singapore: Springer Nature Singapore, 2024.</p>
+
+
+
         </section>
     </div>
 
