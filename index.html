@@ -19,18 +19,20 @@
             <li><a href="#tasks">Task Description</a></li>
             <li><a href="#pilot">Pilot Run</a></li>
             <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#participants">Registration</a></li>
             <li><a href="#organizers">Organizers</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <section id="overview">
+
             <h2>Overview</h2>
-            <p><strong>MAHED 2025 </strong> is a shared task at ArabicNLP 2025, focusing on the detection of <strong>hate speech, hope speech, and emotional expression </strong> in Arabic content across both <strong> textual</strong> and <strong> multimodal</strong> formats. This task aims to advance Arabic Natural Language Processing (NLP) through multi-task model and multimodal analysis. Participants may choose to participate in one or more of the following three subtasks:</p>
+            <p><strong>MAHED 2025 </strong> is a shared task at <strong> <a href ="https://arabicnlp2025.sigarab.org/" target="_blank">ArabicNLP 2025</a> Co-located with <a href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</a></strong>, focusing on the detection of <strong>hate speech, hope speech, and emotional expression </strong> in Arabic content across both <strong> textual</strong> and <strong> multimodal</strong> formats. This task aims to advance Arabic Natural Language Processing (NLP) through multi-task model and multimodal analysis. Participants may choose to participate in one or more of the following three subtasks:</p>
             <ul>
-                <li><strong>Text-based Hate and Hope Speech Classification</strong></li>
-                <li><strong>Emotion, Offensive, and Directed Hate Detection (Multitask)</strong></li>
-                <li><strong>Multimodal Hateful Meme Detection</strong></li>
+                <li>Text-based Hate and Hope Speech Classification</li>
+                <li>Emotion, Offensive, and Hate Detection (Multitask)</strong></li>
+                <li>Multimodal Hateful Meme Detection</li>
             </ul>
 
             <h3>Motivation</h3>
@@ -62,8 +64,8 @@
                 <tbody>
                     <tr>
                         <td><strong>Size</strong></td>
-                        <td>TBD</td>
-                        <td>10,000</td>
+                        <td>9,843</td>
+                        <td>8,515</td>
                         <td>4,500</td>
                     </tr>
                     <tr>
@@ -77,9 +79,9 @@
                         </td>
                         <td>
                             <ul>
-                                <li>Emotion</li>
-                                <li>Offensive</li>
-                                <li>Hate</li>
+                                <li>Emotion (12 labels)</li>
+                                <li>Offensive (yes, no)</li>
+                                <li>Hate (hate, not_hate)</li>
                             </ul>
                         </td>
                         <td>
@@ -91,7 +93,7 @@
                     </tr>
                     <tr>
                         <td><strong>Source</strong></td>
-                        <td>Rafiul et al. 2025</td>
+                        <td>Wajdi et al. 2025</td>
                         <td>Wajdi et al.,2024</td>
                         <td>Firoj et. al,2024</td>
                     </tr>
@@ -99,8 +101,8 @@
             </table>
             
             <div class="dataset-info">
-                <p><strong>Annotation</strong>: All content was collected from public social media, anonymized, and annotated by native speakers. Annotation agreement (Cohen's Kappa) is > 0.75.</p>
-                <p><strong>Data Split</strong>: Training, development, and test sets will be provided with evaluation scripts.</p>
+                <p><strong>Annotation</strong>: All content was collected from public social media, anonymized, and annotated by native speakers. Annotation agreement (Cohen's Kappa) is > 0.85.</p>
+                <p><strong>Data Split</strong>: Training, development, and test sets provided with evaluation scripts.</p>
                 <p><strong>Ethics</strong>: The dataset complies with ethical data-sharing standards.</p>
             </div>
             
@@ -143,8 +145,8 @@
             </div>
                         
         <div class="subtask">
-                <h4>Sub-task 2: Emotion, Offensive Language, and Directed Hate Detection</h4>
-                <p><strong>Goal</strong>: Identify the <strong>emotion</strong>, whether the text is <strong>offensive</strong>, and if offensive, whether it contains <strong>identity-targeted hate (directed hate)</strong>.</p>
+                <h4>Sub-task 2: Emotion, Offensive Language, and Hate Detection</h4>
+                <p><strong>Goal</strong>: Identify the <strong>emotion</strong>, whether the text is <strong>offensive</strong>, and if offensive, whether it contains <strong>hate content</strong>.</p>
                             
                     <div class="labels-section">
                         <div class="emoji-header">
@@ -153,7 +155,7 @@
                     <ul>
                         <li><strong>Emotion</strong> (single label): neutral, anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust</li>
                         <li><strong>Offensive</strong>: yes, no</li>
-                        <li><strong>Directed Hate</strong> (if offensive = yes): yes-directed (identity-targeted hate) no-directed (non-targeted or casual offensiveness)</li>
+                        <li><strong>Hate</strong> (if offensive = yes): hate (identity-targeted hate), not_hate (non-targeted or casual offensiveness)</li>
                     </ul>
                 </div>
         
@@ -163,7 +165,7 @@
             </div>
             <ul class="distinctions-list">
                 <li><strong>Hate speech is always offensive</strong>, but not all offensive content is hate speech.</li>
-                <li><strong>Directed hate</strong> refers to offensive content targeting a group/person based on identity (e.g., race, gender, religion).</li>
+                <li><strong>Hate</strong> refers to offensive content targeting a group/person based on identity (e.g., race, gender, religion).</li>
             </ul>
         </div>
         
@@ -173,7 +175,7 @@
                     <th>Text</th>
                     <th>Emotion</th>
                     <th>Offensive</th>
-                    <th>Directed Hate</th>
+                    <th>Hate</th>
                 </tr>
             </thead>
             <tbody>
@@ -183,7 +185,7 @@
                     </td>
                     <td>anger</td>
                     <td>yes</td>
-                    <td class="yes-directed">yes-directed</td>
+                    <td class="yes-directed">hate</td>
                 </tr>
                 <tr>
                     <td>
@@ -191,24 +193,9 @@
                     </td>
                     <td>anger</td>
                     <td>yes</td>
-                    <td class="no-directed">no-directed</td>
+                    <td class="no-directed">not_hate</td>
                 </tr>
-                <tr>
-                    <td>
-                        <span class="arabic-text">الحكومة فاشلة وما تسوى شي مفيد</span>
-                    </td>
-                    <td>anger</td>
-                    <td>yes</td>
-                    <td class="yes-directed">yes-directed</td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="arabic-text">تكفون بيجيبون لي امراض مابي اشوف احد</span>
-                    </td>
-                    <td>fear</td>
-                    <td class="no-offensive">no</td>
-                    <td class="dash">—</td>
-                </tr>
+
                 <tr>
                     <td>
                         <span class="arabic-text">أشعر بالحزن لأنني خسرت وظيفتي</span>
@@ -333,19 +320,24 @@
                 </tr>
             </table>
 
-            <h2>CodaBench & Submission</h2>
+        </section>
+
+        <section id="participants">
+
+            <h2>Registration & Submission</h2>
+            Partipant can register the shared task through <a href="https://forms.gle/PnYEV8LFGQYM2H8V6" target="_blank"> registration form</a>
             <h3>Competition Participation URL</h3>
             <ul>
-                <li>Sub-task 1: <a href="https://www.codabench.org/competitions/8743/">Codabench Task 1</a></li>
-                <li>Sub-task 2: <a href="https://www.codabench.org/competitions/8783/">Codabench Task 2</a></li>
-                <li>Sub-task 3: <a href="https://www.codabench.org/competitions/8783/">Codabench Task 3</a></li>
+                <li><a href="https://www.codabench.org/competitions/9136/" target="_blank">Codabench for Sub-Task 1</a></li>
+                <li><a href="https://www.codabench.org/competitions/9166/" target="_blank">Codabench for Sub-Task 2</a></li>
+                <li><a href="https://www.codabench.org/competitions/8783/" target="_blank">Codabench for Sub-Task 3</a></li>
 
             </ul>
             <h3>Paper Submission</h3> 
             <p>Particpants can submit their System Paper in <a href="https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2025/MAHED_Shared_Task>openreview submission">openreview submission portal</a></p>. 
 
-        </section>
 
+        </section>
         <section id="organizers">
             <h2>Organizing Team</h2>
             <ul>
