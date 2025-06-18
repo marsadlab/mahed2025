@@ -365,6 +365,28 @@ footer {
     background-color: #fff;
 }
 
+.alert-box-important {
+  padding: 14px;
+  background-color: #f8d7da;
+  border-left: 6px solid #dc3545;
+  border-radius: 4px;
+  color: #721c24;
+}
+
+.alert-box-important ul {
+  margin-top: 10px;
+}
+
+.alert-box-warning {
+  padding: 12px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-left: 6px solid #ffa500;
+  border-radius: 4px;
+  color: #856404;
+  font-weight: 500;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul li {
@@ -405,5 +427,6 @@ footer {
     .timeline-table th,
     .timeline-table td {
         padding: 8px 10px;
-    }
+    }   /* style.css */
+
 }
