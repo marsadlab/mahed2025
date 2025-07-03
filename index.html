@@ -268,11 +268,11 @@
                     <ul class="metrics-list">
                         <li>
                             <div class="primary-metric">
-                                <strong>Macro-averaged F1-score</strong>
+                                <strong>Micro-averaged F1-score</strong>
                                 <span class="metric-note">*(primary metric)*</span>
                             </div>
                         </li>
-                        <li><strong>Precision and Recall</strong></li>
+                        <li><strong>Accuracy, Precision and Recall</strong></li>
                         <li><strong>Separate leaderboards per sub-task</strong></li>
                     </ul>
                 </div>
@@ -280,9 +280,9 @@
             <h2>Pilot Run Details</h2>
             <p>A pilot study with 2,000 text instances and 500 memes yielded:</p>
             <ul>
-                <li>Sub-task 1: F1 0.71 (hate), 0.82 (hope) with BERT</li>
-                <li>Sub-task 2: F1 0.84 with ArabERT model</li>
-                <li>Sub-task 3: F1 0.68 for multimodal hate memes</li>
+                <li>Sub-task 1: F1 0.53 with BERT</li>
+                <li>Sub-task 2: F1 0.50 with ArabERT model</li>
+                <li>Sub-task 3: F1 0.70 for multimodal hate memes</li>
             </ul>
             <p>Feedback refined the dataset; details will be shared upon acceptance.</p>
         </section>
@@ -323,40 +323,141 @@
         </section>
 
         <section id="participants">
+        <h2>Registration & Submission</h2>
+        <div class="step">
+                <div class="step-header">
+                    <div class="step-icon step-1">✓</div>
+                    Step 1: Fill the Google Form
+                </div>
+                <div class="step-content">
+                    <ul>
+                        <li>Complete the <a href="https://forms.gle/PnYEV8LFGQYM2H8V6" target="_blank"> registration form</a> to let us know you're interested.</li>
+                        <li>
+                            <div class="warning">
+                                <span class="warning-icon">⚠</span>
+                                <span class="warning-text">
+                                    <strong>Note:</strong> This step <span class="highlight">only registers your interest</span> — it does not enroll you in the competition.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-            <h2>Registration & Submission</h2>
-            Partipant can register the shared task through <a href="https://forms.gle/PnYEV8LFGQYM2H8V6" target="_blank"> registration form</a>
-              <div class="alert-box-warning">
-                Remote registration for this task <strong>can be funded</strong> through available student funding.
-              </div>
-            <h3>Competition Participation URL</h3>
-            <ul>
-                <li><a href="https://www.codabench.org/competitions/9136/" target="_blank">Codabench for Sub-Task 1</a></li>
-                <li><a href="https://www.codabench.org/competitions/9166/" target="_blank">Codabench for Sub-Task 2</a></li>
-                <li><a href="https://www.codabench.org/competitions/9192/" target="_blank">Codabench for Sub-Task 3</a></li>
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-icon step-2">2</div>
+                    Step 2: Create a CodaBench Account
+                </div>
+                <div class="step-content">
+                    <ul>
+                        <li>If you don't have a CodaBench account yet, go to <a href="https://www.codabench.org/" target="_blank">https://www.codabench.org/</a> and sign up.</li>
+                        <li>Use a valid email and create a password.</li>
+                        <li>Confirm your account through the email verification link (if required).</li>
+                    </ul>
+                </div>
+            </div>
 
-            </ul>
-            <h3>Paper Submission</h3> 
-            <p>Particpants can submit their System Paper in <a href="https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2025/MAHED_Shared_Task" target="_blank">openreview submission</a></p>. 
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-icon step-3">3</div>
+                    Step 3: Visit the CodaBench Task Pages
+                </div>
+                <div class="step-content">
+                    <ul>
+                        <li>Choose the tasks you want to compete in and <strong>officially join</strong> them.</li>
+                    </ul>
+                    
+                    <div class="task-links">
+                        <h4>Here are the links:</h4>
+                        <a href="https://www.codabench.org/competitions/9136/" class="task-link" target="_blank">
+                            <div class="task-icon"></div>
+                            <strong>Task 1:</strong> https://www.codabench.org/competitions/9136/
+                        </a>
+                        <a href="https://www.codabench.org/competitions/9166/" class="task-link" target="_blank">
+                            <div class="task-icon"></div>
+                            <strong>Task 2:</strong> https://www.codabench.org/competitions/9166/
+                        </a>
+                        <a href="https://www.codabench.org/competitions/9192/" class="task-link" target="_blank">
+                            <div class="task-icon"></div>
+                            <strong>Task 3:</strong> https://www.codabench.org/competitions/9192/
+                        </a>
+                    </div>
 
+                    <div class="join-instruction">
+                        Click the "Join" or "Participate" button on the task page once you're logged in.
+                    </div>
+                </div>
+            </div>
 
-            <div class="alert-box-important">
-              <strong>Important!</strong> OpenReview's moderation policy for newly created profiles:
-              <ul>
-                <li>New profiles <strong>without</strong> an institutional email will go through a moderation process that can take up to <strong>two weeks</strong>.</li>
-                <li>New profiles <strong>with</strong> an institutional email will be activated automatically.</li>
-              </ul>
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-icon step-4">4</div>
+                    Step 4: Model Development
+                </div>
+                <div class="step-content">
+                    <ul>
+                        <li>After joining, follow the task instructions.</li>
+                        <li>Get access to data and baseline code: <a href="https://github.com/marsadlab/MAHED2025Dataset" target="_blank">https://github.com/marsadlab/MAHED2025Dataset</a></li>
+                        <li>Develop your model and evaluate it through the Codabench Evaluation Phase by submitting prediction file</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-icon step-5">5</div>
+                    Step 5: Prediction File and System Paper Submission
+                </div>
+                <div class="step-content">
+                    <ul>
+                        <li>Submit your final predictions through the CodaBench platform.</li>
+                        <li> Create an acocunt <a href="https://openreview.net" target="_blank"> openreview portal</a> </li>
+                        <li>Submit your system description paper in <a href="https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2025/MAHED_Shared_Task" target="_blank">openreview submission portal for MAHED Shared Task</a></li>
+                        <li>Ensure all submissions are completed before the specified deadlines.</li>
+
+                    </ul>
+                </div>
+                <div class="warning">
+                    <span class="warning-icon">⚠</span>
+                    <span class="warning-text">
+                        <strong>Important!</strong> OpenReview's moderation policy for newly created profiles: New profiles <strong>without</strong> an institutional email will go through a moderation process that can take up to <strong>two weeks. </strong>
+                      New profiles <strong>with</strong> an institutional email will be activated automatically
+                    </span>
+                </div>
+
+                <div class="join-instruction">
+                        Remote registration for this task <strong>can be funded</strong> through available student funding.
+                </div>
             </div>
 
 
         </section>
         <section id="organizers">
 
-             <h2> Communication Channel</h2>
-                <ul>
-                    <li><a href ="https://chat.whatsapp.com/IaWlA8ruVpv3RE1cllZmgm" target="_blank"> MAHED 2025 Whatsapp Support group</a></li>
-                    <li><a href ="mailto:MAHED2025@gmail.com" target="_blank"> MAHED 2025 Google Group</a></li>
-                </ul> 
+             <h2> <div class="step-icon step-1">📞</div>
+            Support & Contact</h2>
+
+        <div class="step-content">
+            <div class="contact-links">
+                <a href="https://chat.whatsapp.com/IaWlA8ruVpv3RE1cllZmgm" class="contact-link whatsapp-link" target="_blank">
+                    <div class="contact-icon whatsapp-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
+                        </svg>
+                    </div>
+                    MAHED 2025 WhatsApp Support Group
+                </a>
+                <a href="mailto:MAHED2025@gmail.com" class="contact-link gmail-link" target="_blank">
+                    <div class="contact-icon gmail-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                        </svg>
+                    </div>
+                    MAHED 2025 Gmail Contact
+                </a>
+            </div>
+
 
             <h2>Organizing Team</h2>
             <ul>
