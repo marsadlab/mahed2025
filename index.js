@@ -45,12 +45,14 @@ const mockData = {
         { rank:2, name: 'NguyenTriet', f1: 0.553, accuracy: 0.721, precision: 0.543, recall: 0.589 },
         { rank:3, name: 'HTU', f1: 0.535, accuracy: 0.713, precision: 0.549, recall: 0.576 },
         { rank:4, name: 'CUET_823', f1: 0.518, accuracy: 0.729, precision: 0.617, recall: 0.509 },
-        { rank:5, name: 'SmolLab_SEU', f1: 0.514, accuracy: 0.709, precision: 0.531, recall: .525 },
+        { rank:5, name: 'SmolLab_SEU', f1: 0.514, accuracy: 0.709, precision: 0.531, recall: 0.525 },
         { rank:6, name: 'Quasar', f1: 0.480, accuracy: 0.727, precision: 0.499, recall: 0.480 },
         { rank:7, name: 'deleted_user_25186', f1: 0.459, accuracy: 0.692, precision: 0.476, recall: 0.457 },
         { rank:8, name: 'saham', f1: 0.434, accuracy: 0.714, precision: 0.474, recall: 0.441 },
         { rank:9, name: 'turabusmani', f1: 0.398, accuracy: 0.495, precision: 0.385, recall: 0.453 },
-        { rank:10, name: 'ashfaq', f1: 0.336, accuracy: 0.525, precision: 0.332, recall: 0.387 },
+        { rank:10, name: 'dark5037', f1: 0.349, accuracy: 0.482, precision: 0.338, recall: 0.398 },
+        { rank:11, name: 'ashfaq', f1: 0.336, accuracy: 0.525, precision: 0.332, recall: 0.387 },
+
 
     ],
     'task-3': [
@@ -60,7 +62,7 @@ const mockData = {
         { rank:4, name: 'thinkingNodes', f1: 0.718, accuracy: 0.754, precision: 0.776, recall: 0.711 },
         { rank:5, name: 'Not Dot', f1: 0.684, accuracy: 0.728, precision: 0.746, recall: 0.681 },
         { rank:6, name: 'joy_2004114', f1: 0.629, accuracy: 0.664, precision: 0.648, recall: 0.627 },
-
+        { rank:7, name: 'dark5037', f1: 0.497, accuracy: 0.648, precision: 0.796, recall: 0.560 },
     ],
 };
 
