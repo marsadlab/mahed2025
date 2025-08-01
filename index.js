@@ -20,7 +20,7 @@ const mockData = {
         { rank:5, name: 'lmoudjari', f1: 0.701, accuracy: 0.707, precision: 0.704, recall: 0.698 },
         { rank:6, name: 'phucclone', f1: 0.700, accuracy: 0.700, precision: 0.689, recall: 0.718 },
         { rank:7, name: 'novatriee', f1: 0.698, accuracy: 0.697, precision: 0.685, recall: 0.716 },
-        { rank:8, name: 'CUET', f1: 0.695, accuracy: 0.699, precision: 0.694, recall: 0.697 },
+        { rank:8, name: 'CUET_Zahra_Duo', f1: 0.695, accuracy: 0.699, precision: 0.694, recall: 0.697 },
         { rank:9, name: 'ahmedabdou', f1: 0.695, accuracy: 0.705, precision: 0.704, recall: 0.699 },
         { rank:10, name: 'trantranuit', f1: 0.694, accuracy: 0.700, precision: 0.696, recall: 0.691 },
         { rank:11, name: 'SmolLab_SEU', f1: 0.682, accuracy: 0.688, precision: 0.678, recall: 0.694 },
@@ -36,7 +36,7 @@ const mockData = {
         { rank:20, name: 'saham', f1: 0.650, accuracy: 0.659, precision: 0.653, recall: 0.647 },
         { rank:21, name: 'turabusmani', f1: 0.647, accuracy: 0.662, precision: 0.662, recall: 0.638 },
         { rank:22, name: 'ANLP-UniSo', f1: 0.595, accuracy: 0.595, precision: 0.585, recall: 0.630 },
-        { rank:23, name: 'nsrinashraf', f1: 0.579, accuracy: 0.580, precision: 0.568, recall: 0.605 },
+        { rank:23, name: 'REGLAT', f1: 0.579, accuracy: 0.580, precision: 0.568, recall: 0.605 },
         { rank:24, name: 'shadmansaleh', f1: 0.483, accuracy: 0.480, precision: 0.518, recall: 0.598 },
         { rank:25, name: 'ibad-ur-rehman', f1: 0.481, accuracy: 0.656, precision: 0.490, recall: 0.475 },
     ],
@@ -50,7 +50,7 @@ const mockData = {
         { rank:7, name: 'deleted_user_25186', f1: 0.459, accuracy: 0.692, precision: 0.476, recall: 0.457 },
         { rank:8, name: 'saham', f1: 0.434, accuracy: 0.714, precision: 0.474, recall: 0.441 },
         { rank:9, name: 'turabusmani', f1: 0.398, accuracy: 0.495, precision: 0.385, recall: 0.453 },
-        { rank:10, name: 'dark5037', f1: 0.349, accuracy: 0.482, precision: 0.338, recall: 0.398 },
+        { rank:10, name: 'MultiMinds', f1: 0.349, accuracy: 0.482, precision: 0.338, recall: 0.398 },
         { rank:11, name: 'ashfaq', f1: 0.336, accuracy: 0.525, precision: 0.332, recall: 0.387 },
 
 
