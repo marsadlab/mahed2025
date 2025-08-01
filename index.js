@@ -34,6 +34,7 @@ const mockData = {
         { rank:18, name: 'nguyenminhtriet', f1: 0.659, accuracy: 0.654, precision: 0.647, recall: 0.696 },
         { rank:19, name: 'Senimeo', f1: 0.651, accuracy: 0.660, precision: 0.653, recall: 0.658 },
         { rank:20, name: 'saham', f1: 0.650, accuracy: 0.659, precision: 0.653, recall: 0.647 },
+        { rank:20, name: 'AraNLP', f1: 0.650, accuracy: 0.677, precision: 0.696, recall: 0.630 },
         { rank:21, name: 'turabusmani', f1: 0.647, accuracy: 0.662, precision: 0.662, recall: 0.638 },
         { rank:22, name: 'ANLP-UniSo', f1: 0.595, accuracy: 0.595, precision: 0.585, recall: 0.630 },
         { rank:23, name: 'REGLAT', f1: 0.579, accuracy: 0.580, precision: 0.568, recall: 0.605 },
