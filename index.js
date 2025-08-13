@@ -17,7 +17,7 @@ const mockData = {
         { rank:3, name: 'AAA', f1: 0.707, accuracy: 0.712, precision: 0.705, recall: 0.710 },
         { rank:3, name: 'NguyenTriet', f1: 0.707, accuracy: 0.705, precision: 0.692, recall: 0.737 },
         { rank:4, name: 'LoveHeaven', f1: 0.703, accuracy: 0.713, precision: 0.710, recall: 0.699 },
-        { rank:5, name: 'lmoudjari', f1: 0.701, accuracy: 0.707, precision: 0.704, recall: 0.698 },
+        { rank:5, name: 'IRIT_HOPE', f1: 0.701, accuracy: 0.707, precision: 0.704, recall: 0.698 },
         { rank:6, name: 'phucclone', f1: 0.700, accuracy: 0.700, precision: 0.689, recall: 0.718 },
         { rank:7, name: 'novatriee', f1: 0.698, accuracy: 0.697, precision: 0.685, recall: 0.716 },
         { rank:8, name: 'CUET_Zahra_Duo', f1: 0.695, accuracy: 0.699, precision: 0.694, recall: 0.697 },
